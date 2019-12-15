@@ -1,0 +1,15 @@
+{
+  "name": "Copy paste position size",
+  "id": "787948653989604774",
+  "api": "1.0.0",
+  "main": "code.js",
+  "menu": [
+    {"name": "Copy Position Size", "command": "copy"},
+    {"name": "Paste Position", "command": "pastePosition"},
+    {"name": "Paste X", "command": "pasteX"},
+    {"name": "Paste Y", "command": "pasteY"},
+    {"name": "Paste Size", "command": "pasteSize"},
+    {"name": "Paste Width", "command": "pasteWidth"},
+    {"name": "Paste Height", "command": "pasteHeight"}
+  ]
+}
