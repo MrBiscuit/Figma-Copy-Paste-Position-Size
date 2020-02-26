@@ -17,7 +17,5 @@ This plugin is inspired by [ajilderda](https://github.com/ajilderda)'s [Sketch-C
 | Paste X    | <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>x</kbd>   |
 | Paste Y    | <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>y</kbd>   |
 | Paste Position *(X & Y)*    | <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>   |
-| Paste Width Porportionally**    | <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>w</kbd>   |
-| Paste Height Porportionally**    | <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>h</kbd>   |
 
 \*The values are copied within Figma and won't interfere with your OS' clipboard.
