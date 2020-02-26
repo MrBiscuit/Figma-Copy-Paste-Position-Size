@@ -1,4 +1,4 @@
-# Github-Repo
+# Figma-Copy-Paste-Position-Size
  
 A plugin that lets you easily copy & paste width, height, x & y values from and to objects!
 
