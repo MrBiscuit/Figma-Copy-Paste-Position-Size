@@ -1,3 +1,9 @@
+function absoluteX(layer) {
+    return layer.absoluteTransform[0][2];
+}
+function absoluteY(layer) {
+    return layer.absoluteTransform[1][2];
+}
 let selectedItems = figma.currentPage.selection;
 let root = figma.root;
 if (selectedItems.length == 0) {
@@ -11,6 +17,8 @@ if (figma.command == 'copy') {
     root.setPluginData("y", String(selectedItems[0].y));
     root.setPluginData("width", String(selectedItems[0].width));
     root.setPluginData("height", String(selectedItems[0].height));
+    root.setPluginData("AbsX", String(absoluteX(selectedItems[0])));
+    root.setPluginData("AbsY", String(absoluteY(selectedItems[0])));
     figma.closePlugin('Copy Success!');
 }
 if (figma.command == 'pastePosition') {
@@ -56,6 +64,29 @@ if (figma.command == 'pasteHeight') {
     selectedItems.forEach(element => {
         element.resize(element.width, h);
     });
-    figma.closePlugin('Width Pasted!');
+    figma.closePlugin('Height Pasted!');
+}
+if (figma.command == 'pasteAbsX') {
+    const x = +root.getPluginData("AbsX");
+    selectedItems.forEach(element => {
+        element.x += x - absoluteX(element);
+    });
+    figma.closePlugin('Absolute X Pasted!');
+}
+if (figma.command == 'pasteAbsY') {
+    const y = +root.getPluginData("AbsY");
+    selectedItems.forEach(element => {
+        element.y += y - absoluteY(element);
+    });
+    figma.closePlugin('Absolute Y Pasted!');
+}
+if (figma.command == 'pasteAbsPosition') {
+    const x = +root.getPluginData("AbsX");
+    const y = +root.getPluginData("AbsY");
+    selectedItems.forEach(element => {
+        element.x += x - absoluteX(element);
+        element.y += y - absoluteY(element);
+    });
+    figma.closePlugin('Absolute Position Pasted!');
 }
 figma.closePlugin('Failed!');

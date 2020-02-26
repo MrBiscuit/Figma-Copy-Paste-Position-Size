@@ -5,11 +5,16 @@
   "main": "code.js",
   "menu": [
     {"name": "Copy Position Size", "command": "copy"},
+    {"separator": true},
     {"name": "Paste Position", "command": "pastePosition"},
     {"name": "Paste X", "command": "pasteX"},
     {"name": "Paste Y", "command": "pasteY"},
     {"name": "Paste Size", "command": "pasteSize"},
     {"name": "Paste Width", "command": "pasteWidth"},
-    {"name": "Paste Height", "command": "pasteHeight"}
+    {"name": "Paste Height", "command": "pasteHeight"},
+    {"separator": true},
+    {"name": "Paste Absolute Position", "command": "pasteAbsPosition"},
+    {"name": "Paste Absolute X", "command": "pasteAbsX"},
+    {"name": "Paste Absolute Y", "command": "pasteAbsY"}
   ]
 }
