@@ -7,14 +7,17 @@
     {"name": "Copy Position Size", "command": "copy"},
     {"separator": true},
     {"name": "Paste Position", "command": "pastePosition"},
+    {"name": "Paste Relative Position", "command": "pasteRP"},
+
     {"name": "Paste X", "command": "pasteX"},
     {"name": "Paste Y", "command": "pasteY"},
+    {"name": "Paste Relative X", "command": "pasteRX"},
+    {"name": "Paste Relative Y", "command": "pasteRY"},
+    {"name": "Paste Vertical Center", "command": "pasteVC"},
+    {"name": "Paste Horizontal Center", "command": "pasteHC"},
+    {"separator": true},
     {"name": "Paste Size", "command": "pasteSize"},
     {"name": "Paste Width", "command": "pasteWidth"},
-    {"name": "Paste Height", "command": "pasteHeight"},
-    {"separator": true},
-    {"name": "Paste Absolute Position", "command": "pasteAbsPosition"},
-    {"name": "Paste Absolute X", "command": "pasteAbsX"},
-    {"name": "Paste Absolute Y", "command": "pasteAbsY"}
+    {"name": "Paste Height", "command": "pasteHeight"}
   ]
 }
